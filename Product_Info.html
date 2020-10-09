@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bun Bun Bake Shop- Menu</title>
+    <link href="bbStylesheet.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- Grid container -->
+<div class="grid-prod-info">
+    <div class="logo">  <!-- Logo and name -->
+        <a href="Home_Page.html" class="logo-txt"><h1 class="logo-txt">Bun Bun Bake Shop</h1></a>
+        <a href="Home_Page.html" class="logo-img"><img src="BBlogo.png" alt="bread and pastries" class="logo-img"></a>
+    </div>
+
+    <div class="nav-bar"> <!-- Navigation bar -->
+        <div class="nav-bar home">  <!-- Home Section -->
+            <img src="homeIcon.png" alt="home" class="nav-bar-icon">
+            <h4 class="nav-txt">Home</h4>
+        </div>
+        <div class="nav-bar menu">  <!-- Menu section -->
+            <a href="Product_Browsing.html"><img src="menuIcon.png" alt="utensils" class="nav-bar-icon"></a>
+            <a href="Product_Browsing.html" class="nav-txt" id="menu-txt">Menu</a>
+        </div>
+        <div class="nav-bar cart">  <!-- Cart section -->
+            <div class="cart-icons nav-bar-icon">
+                <img src="cartIconUpdated.png" alt="cart">
+                <p class="cart-num navBarIcon" id="cart-num">0</p>
+            </div>
+            <h4 class="nav-txt">Cart</h4>
+        </div>
+        <div class="nav-bar about-us">  <!-- About Us section -->
+            <img src="aboutUsIcon.png" alt="star" class="nav-bar-icon">
+            <h4 class="nav-txt">About Us</h4>
+        </div>
+    </div>
+
+    <!-- Navigation bar separator -->
+    <img src="Line%2012.png" alt="yellow line" id="menu-line">
+
+
+    <!-- Back to menu button -->
+    <div class="back">
+        <a href="Product_Browsing.html"><img src="back.jpg" alt="pink back arrow" class="back"></a>
+        <a href="Product_Browsing.html"><p class="back">Back</p></a>
+    </div>
+
+    <!-- Product image and description-->
+    <img src="caramelPecan.jpg" alt="caramel pecan cinnamon rolls" class="cp-img">
+    <div class="desc"><p>You get the best of both worlds with this sweet and salty
+        combo. The caramel-and-cinnamon-flavored dough is sprinkled with pecan crumbles
+        for the perfect mix of flavors and texture.</p></div>
+
+    <!-- Product name and options -->
+    <h4 class="pb-prod-name">Caramel Pecan Cinnamon Roll</h4>
+
+    <div class="option-txt" id="quantity-txt">Quantity:</div>
+    <div class="option-txt" id="glaze-txt">Glaze:</div>
+    <div class="option-txt" id="delivery-txt">Delivery:</div>
+
+
+    <!--Quantity dropdown-->
+    <div class="dropdown quantity">
+        <button class="dropdown-button">1 Roll- $4.50</button>
+        <img src="Vector.jpg" alt="down arrow" class="arrow">
+        <div class="dropdown-options">
+            <p>3 Rolls- $10.00</p>
+            <p>6 Rolls- $20.00</p>
+            <p>12 Rolls- $34.00</p>
+        </div>
+    </div>
+
+    <!-- Glaze dropdown-->
+    <div class="dropdown glaze">
+        <button class="dropdown-button">None</button>
+        <img src="Vector.jpg" alt="down arrow" class="arrow">
+        <div class="dropdown-options">
+            <p>Sugar-Milk</p>
+            <p>Vanilla-Milk</p>
+            <p>Double-Chocolate</p>
+        </div>
+    </div>
+
+    <!--Delivery dropdown-->
+    <div class="dropdown delivery">
+        <button class="dropdown-button">In-Store Pickup</button>
+        <img src="Vector.jpg" alt="down arrow" class="arrow">
+        <div class="dropdown-options">
+            <p>Delivery</p>
+        </div>
+    </div>
+
+    <!-- Add to Cart button -->
+        <button class="add-to-cart">Add To Cart</button>
+    </div>
+</body>
+</html>
