@@ -112,7 +112,7 @@
 .header-img{
     width: 100%;
     height: 100%;
-    grid-area: 2 / 2/ span 2 / span 11;
+    grid-area: 2 / 2 / span 3 / span 11;
     border: 4px solid #252323;
     box-sizing: border-box;
     border-radius: 60px;
