@@ -389,7 +389,7 @@
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
-.dropdown-content {
+.dropdown-options {
     width: 265px;
     display: none;
     position: relative;
@@ -402,7 +402,7 @@
     font: normal 24px/36px Oswald;
 }
 
-.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-options {
     display: block;
 }
 
