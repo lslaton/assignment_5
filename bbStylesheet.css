@@ -352,6 +352,8 @@
 }
 .option-txt{
     grid-column: 8 / span 1;
+    display: inline-block;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
