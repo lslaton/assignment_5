@@ -44,6 +44,8 @@
 }
 
 /* Helped me with flex setup: https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+/* https://www.w3schools.com/css/css_navbar_horizontal.asp */
+/* https://www.w3schools.com/howto/howto_js_topnav.asp*/
 .nav-bar{
     grid-area: 1 / 8 / span 1 / span 5;
     text-align: left;
@@ -51,7 +53,6 @@
     align-items: center;
     flex-basis: 132px;
     justify-content: space-around;
-
     font: normal 24px/0 Oswald;
     color: #252323;
 }
@@ -169,7 +170,6 @@
 
 /* || PRODUCT BROWSING PAGE */
 /* Menu header image and text */
-
 .menu-header {
     grid-area: 2 / 2 / span 2 / span 11;
     align-items: center;
@@ -242,6 +242,7 @@
 }
 
 /* Setting hover over product name to change image */
+/* https://www.w3schools.com/css/css_link.asp */
 .prod-name:link, .prod-name:visited{
     color: #F5BC3A;
     text-decoration: none;
@@ -371,38 +372,21 @@
     grid-row: 6 / span 1;
 }
 
-/* Help with dropdown menus from https://www.w3schools.com/css/css_dropdowns.asp */
-.dropdown {
+/* Help with dropdown from https://www.w3schools.com/css/css_dropdowns.asp */
+.options {
+    grid-column: 9;
     position: relative;
     display: inline-block;
-    grid-column: 9;
     padding-left: 27px;
 }
 
-.dropdown-button{
+.options-button{
     width: 292px;
     height: 100%;
     background: #F5BC3A;
     border-radius: 37.5px;
     font: normal 24px/36px Oswald;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
-.dropdown-options {
-    width: 265px;
-    display: none;
-    position: relative;
-    background-color: #F5BC3A;
-    border-radius: 37.5px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    padding: 12px 16px;
-    z-index: 1;
-    text-align: center;
-    font: normal 24px/36px Oswald;
-}
-
-.dropdown:hover .dropdown-options {
-    display: block;
 }
 
 .arrow{
