@@ -13,8 +13,8 @@
     grid-gap: 20px 20px;
 }
 
-/* Product Info Page Grid */
-.grid-prod-info{
+/* Product Info Page Grid and Cart */
+.grid-prod-info, .grid-cart{
     display: grid;
     grid-template: repeat(8, 75px) / repeat(13, 93px);
     grid-gap: 20px 20px;
@@ -96,7 +96,7 @@
 }
 
 /* Indicates current page in nav bar */
-#home-txt, #menu-txt{
+#home-txt, #menu-txt, #cart-txt{
     color: #F5BC3A;
 }
 
@@ -170,13 +170,13 @@
 
 /* || PRODUCT BROWSING PAGE */
 /* Menu header image and text */
-.menu-header {
+.menu-header, .cart-header {
     grid-area: 2 / 2 / span 2 / span 11;
     align-items: center;
     text-align: center;
 }
 
-#menu-img{
+#menu-img, #cart-img{
     width: 100%;
     height: 100%;
     border: 4px solid #252323;
@@ -184,7 +184,7 @@
     border-radius: 60px;
 }
 
-#menu-title{
+#menu-title, #cart-title{
     position: relative;
     align-content: center;
     top: -125%;
