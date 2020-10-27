@@ -6,6 +6,7 @@
     <link href="bbStylesheet.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="bb_Main.js"></script>
 </head>
 <body>
     <!-- Grid container -->
@@ -59,31 +60,40 @@
         <!-- Product name and options -->
         <h4 class="pb-prod-name">Caramel Pecan Cinnamon Roll</h4>
 
-        <div class="option-txt" id="quantity-txt">Quantity:</div>
-        <div class="option-txt" id="glaze-txt">Glaze:</div>
-        <div class="option-txt" id="delivery-txt">Delivery:</div>
-
 
         <!--Quantity dropdown-->
         <div class="options">
-            <button class="options-button">1 Roll- $4.50</button>
-            <img src="icons/Vector.jpg" alt="down arrow" class="arrow">
+            <label for="drop-qty">Quantity:</label>
+            <select name="drop-qty" id="drop-qty">
+                <option value="roll1">1 Roll- $4.50</option>
+                <option value="roll3">3 Rolls- $10.00</option>
+                <option value="roll6">6 Rolls- $20.00</option>
+                <option value="roll12">12 Rolls- $34.00</option>
+            </select>
         </div>
 
         <!-- Glaze dropdown-->
         <div class="options">
-            <button class="options-button">None</button>
-            <img src="icons/Vector.jpg" alt="down arrow" class="arrow">
+            <label for="drop-glaze">Quantity:</label>
+            <select name="drop-glaze" id="drop-glaze">
+                <option value="none">None</option>
+                <option value="sugar">Sugar-Milk</option>
+                <option value="vanilla">Vanilla-Milk</option>
+                <option value="choc">Double-Chocolate</option>
+            </select>
         </div>
 
         <!--Delivery dropdown-->
         <div class="options">
-            <button class="options-button">In-Store Pickup</button>
-            <img src="icons/Vector.jpg" alt="down arrow" class="arrow">
+            <label for="drop-deliv">Delivery:</label>
+            <select name="drop-deliv" id="drop-deliv">
+                <option value="pickup">In-Store Pickup</option>
+                <option value="delivery">Delivery</option>
+            </select>
         </div>
 
         <!-- Add to Cart button -->
-        <button class="add-to-cart">Add To Cart</button>
+        <button class="add-to-cart" onclick="addToCart()">Add To Cart</button>
     </div>
 
 </body>

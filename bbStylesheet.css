@@ -351,55 +351,43 @@
     align-items: center;
     color: #FE938C;
 }
-.option-txt{
-    grid-column: 8 / span 1;
+
+
+
+/*!* Help with dropdown from https://www.w3schools.com/css/css_dropdowns.asp *!*/
+
+/* Help with select options from https://www.w3schools.com/howto/howto_custom_select.asp */
+.options {
+    grid-column: 8 / span 3;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    font: normal 36px/0 Oswald;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
-#quantity-txt{
-    grid-row: 4 / span 1;
+label{
+    font: normal 36px/53px Oswald;
+    margin-top: 10px;
+    padding-right: 20px;
+    color: #252323;
 }
 
-#glaze-txt{
-    grid-row: 5 / span 1;
-}
-
-#delivery-txt{
-    grid-row: 6 / span 1;
-}
-
-/* Help with dropdown from https://www.w3schools.com/css/css_dropdowns.asp */
-.options {
-    grid-column: 9;
+#drop-qty, #drop-glaze, #drop-deliv{
     position: relative;
-    display: inline-block;
-    padding-left: 27px;
-}
-
-.options-button{
-    width: 292px;
-    height: 100%;
-    background: #F5BC3A;
-    border-radius: 37.5px;
     font: normal 24px/36px Oswald;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    background-color: #F5BC3A;
+    border-radius: 37.5px;
+    height: 100%;
+    width: 66%;
 }
 
-.arrow{
-    display: block;
-    right: 0;
-    margin-right: 13px;
-    position: absolute;
-    top: 15%;
+.select-selected{
+    background-color: #F5BC3A;
 }
 
 /* Add to Cart button */
 .add-to-cart{
-    grid-area: 8 / 9 / span 1 / span 3;
+    grid-area: 8 / 8 / span 1 / span 3;
     background: #FE938C;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 37.5px;
