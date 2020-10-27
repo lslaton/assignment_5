@@ -86,7 +86,7 @@
 }
 
 /* Link styling: https://www.w3schools.com/css/css_link.asp */
-.nav-txt:link, .nav-txt:visited{
+.nav-txt:link, .nav-txt:visited, #cart-num{
     color: #252323;
     text-decoration: none;
 }
@@ -96,7 +96,7 @@
 }
 
 /* Indicates current page in nav bar */
-#home-txt, #menu-txt, #cart-txt{
+#home-txt, #menu-txt, #cart-txt,{
     color: #F5BC3A;
 }
 
