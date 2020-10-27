@@ -192,3 +192,36 @@
     font: normal 36px/53.35px Oswald;
     background: #F5BC3A;
 }
+
+.container{
+    grid-area: 4 / 3 / span 3 / span 5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.edit-remove {
+    display: flex;
+    flex-direction: column;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: -24px;
+    grid-row: span 2;
+}
+
+.price {
+    font: normal 24px/36px Oswald;
+    color: #252323;
+}
