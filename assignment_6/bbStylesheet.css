@@ -1,0 +1,401 @@
+/* || GRID SET UP */
+/* Home Page Grid */
+.grid{
+    display: grid;
+    grid-template: repeat(10, 75px) / repeat(13, 93px);
+    grid-gap: 20px 20px;
+}
+
+/* Product Browsing Page Grid */
+.grid-prod-browsing{
+    display: grid;
+    grid-template: repeat(16, 75px) / repeat(13, 93px);
+    grid-gap: 20px 20px;
+}
+
+/* Product Info Page Grid and Cart */
+.grid-prod-info, .grid-cart{
+    display: grid;
+    grid-template: repeat(8, 75px) / repeat(13, 93px);
+    grid-gap: 20px 20px;
+}
+
+
+/* || NAV BAR SET UP */
+/* Set position of logo and text in Nav Bar */
+.logo {
+    grid-area: 1 / 2 / span 1 / span 3;
+    position: relative;
+    text-align: center;
+}
+.logo-img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.logo-txt{
+    left: 0;
+    position:absolute;
+    width: 100%;
+    font: bold 48px/0 'Amatic SC';
+    align-items: center;
+    text-align: center;
+    color: #FE938C;
+}
+
+/* Helped me with flex setup: https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+/* https://www.w3schools.com/css/css_navbar_horizontal.asp */
+/* https://www.w3schools.com/howto/howto_js_topnav.asp*/
+.nav-bar{
+    grid-area: 1 / 8 / span 1 / span 5;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    flex-basis: 132px;
+    justify-content: space-around;
+    font: normal 24px/0 Oswald;
+    color: #252323;
+}
+
+.nav-bar-icon{
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+/* Align left side of icon and right side of text in nav bar */
+.home, .menu, .cart, .about-us{
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+
+/* Set number of items in cart over cart icon */
+.cart-icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 36px;
+    width: 36px;
+}
+
+#cart-num{
+    position: absolute;
+    top: -6px;
+    left: 14px;
+}
+
+/* Link styling: https://www.w3schools.com/css/css_link.asp */
+.nav-txt:link, .nav-txt:visited, #cart-num{
+    color: #252323;
+    text-decoration: none;
+}
+
+.nav-txt:hover{
+    color: #F5BC3A;
+}
+
+/* Indicates current page in nav bar */
+#home-txt, #menu-txt, #cart-txt{
+    color: #F5BC3A;
+}
+
+/* Sets nav bar separator between grid margins */
+#menu-line{
+    position: absolute;
+    left: 0;
+    top: 75px;
+}
+
+
+/* || HOME PAGE CONTENT */
+/* Header image */
+.header-img{
+    width: 100%;
+    height: 100%;
+    grid-area: 2 / 2 / span 3 / span 11;
+    border: 4px solid #252323;
+    box-sizing: border-box;
+    border-radius: 60px;
+}
+
+/* Left and right images of logo on homepage */
+.left-img {
+    grid-area: 6 / 2 / span 1 / span 3;
+}
+
+.right-img {
+    grid-area: 6 / 10 / span 1 / span 3;
+}
+
+/* Welcome text */
+#welcome {
+    grid-area: 4 / 5 / span 3 / span 5;
+    font: bold 96px/121px Amatic SC;
+    justify-content: center;
+    text-align: center;
+    color: #FE938C;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+/* Location and hours information */
+.location {
+    grid-area: 8 / 4 / span 3 / span 3;
+}
+
+.hour {
+    grid-area: 8 / 8 / span 3 / span 3;
+}
+
+#pittsburgh-delivery {
+    grid-area: 7 / 4 / span 3 / span 7;
+    font: italic 24px/53px Oswald;
+    text-align: center;
+    color: #252323;
+}
+
+.subtitle {
+    font: bold 64px/0 Amatic SC;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #F5BC3A;
+}
+
+.detail{
+    font: normal 36px/53px Oswald;
+    text-align: center;
+    color: #252323;
+}
+
+
+/* || PRODUCT BROWSING PAGE */
+/* Menu header image and text */
+.menu-header, .cart-header {
+    grid-area: 2 / 2 / span 2 / span 11;
+    align-items: center;
+    text-align: center;
+}
+
+#menu-img, #cart-img{
+    width: 100%;
+    height: 100%;
+    border: 4px solid #252323;
+    box-sizing: border-box;
+    border-radius: 60px;
+}
+
+#menu-title, #cart-title{
+    position: relative;
+    align-content: center;
+    top: -125%;
+    font: bold 96px/121px Amatic SC;
+    color: #FE938C;
+    text-align: center;
+}
+
+/* Setting for each product image on the browsing page */
+.prod-img{
+    width: 100%;
+    height: 100%;
+    border: 2px solid #252323;
+    box-sizing: border-box;
+    border-radius: 60px;
+}
+
+/* Remove border from link on caramel pecan product image */
+#link{
+    border: none;
+}
+
+/* Setting the different images for each product */
+#original-img{
+    grid-area: 5 / 2 / span 3 / span 3;
+}
+
+#original-gf-img{
+    grid-area: 9 / 2 / span 3 / span 3;
+}
+
+#blackberry-img{
+    grid-area: 13 / 2 / span 3 / span 3;
+}
+
+#caramel-pecan-img, #link{
+    grid-area: 5 / 8 / span 3 / span 3;
+}
+
+#pumpkin-spice-img{
+    grid-area: 9 / 8 / span 3 / span 3;
+}
+
+#walnut-img{
+    grid-area: 13 / 8 / span 3 / span 3;
+}
+
+/* Setting product name information */
+.prod-name{
+    font: bold 64px/81px Amatic SC;
+    display: flex;
+    align-items: center;
+    text-decoration-line: underline;
+    color: #F5BC3A;
+}
+
+/* Setting hover over product name to change image */
+/* https://www.w3schools.com/css/css_link.asp */
+.prod-name:link, .prod-name:visited{
+    color: #F5BC3A;
+    text-decoration: none;
+}
+
+/* Changes name of product on Product Browsing, and back button on Product Information page */
+.prod-name:hover{
+    color: #FE938C;
+}
+
+/* Setting location of product name */
+#orig-txt{
+    grid-area: 5 / 5 / span 2 / span 2;
+}
+
+#orig-gf-txt{
+    grid-area: 9 / 5 / span 2 / span 2;
+}
+
+#blackberry-txt{
+    grid-area: 13 / 5 / span 2 / span 2;
+}
+
+#caramel-pecan-txt{
+    grid-area: 5 / 11 / span 2 / span 2;
+}
+
+#pumpkin-spice-txt{
+    grid-area: 9 / 11 / span 2 / span 2;
+}
+
+#walnut-txt{
+    grid-area: 13 / 11 / span 2 / span 2;
+}
+
+/* Setting product price text */
+.prod-price{
+    font: normal 36px/53px Oswald;
+    display: flex;
+    align-items: center;
+    color: #252323;
+}
+
+/* Setting product price location */
+#orig-price{
+    grid-area: 6 / 5 / span 3 / span 3;
+}
+
+#orig-gf-price{
+    grid-area: 10 / 5 / span 3 / span 3;
+}
+
+#blackberry-price{
+    grid-area: 14 / 5 / span 3 / span 3;
+}
+
+#caramel-pecan-price{
+    grid-area: 6 / 11 / span 3 / span 3;
+}
+
+#pumpkin-spice-price{
+    grid-area: 10 / 11 / span 3 / span 3;
+}
+
+#walnut-price{
+    grid-area: 14 / 11 / span 3 / span 3;
+}
+
+
+/* || PRODUCT DETAIL PAGE */
+/* Back to Menu */
+.back{
+    grid-area: 2 / 2 / span 1 /span 1;
+    font: normal 18px/27px Oswald;
+    display: flex;
+    align-items: center;
+    color: #252323;
+}
+
+.back:hover{
+    color: #F5BC3A;
+}
+
+/* Image of caramel pecan cinnamon roll */
+.cp-img {
+    grid-area: 2 / 3 / span 5 / span 5;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #252323;
+    box-sizing: border-box;
+    border-radius: 60px;
+}
+
+/* Description of cinnamon roll */
+.desc{
+    grid-area: 7 / 3 / span 3 / span 5;
+    font: normal 24px/36px Oswald;
+    color: #252323;
+}
+
+/* Title of product */
+.pb-prod-name{
+    grid-area: 2 / 8 / span 2 / span 4;
+    font: bold 72px/91px Amatic SC;
+    display: flex;
+    align-items: center;
+    color: #FE938C;
+}
+
+
+
+/*!* Help with dropdown from https://www.w3schools.com/css/css_dropdowns.asp *!*/
+
+/* Help with select options from https://www.w3schools.com/howto/howto_custom_select.asp */
+.options {
+    grid-column: 8 / span 3;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+label{
+    font: normal 36px/53px Oswald;
+    margin-top: 10px;
+    padding-right: 20px;
+    color: #252323;
+}
+
+#drop-qty, #drop-glaze, #drop-deliv{
+    position: relative;
+    font: normal 24px/36px Oswald;
+    background-color: #F5BC3A;
+    border-radius: 37.5px;
+    height: 100%;
+    width: 66%;
+}
+
+.select-selected{
+    background-color: #F5BC3A;
+}
+
+/* Add to Cart button */
+.add-to-cart{
+    grid-area: 8 / 8 / span 1 / span 3;
+    background: #FE938C;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 37.5px;
+    font: normal 48px/71px Oswald;
+    color: #252323;
+}
+
+/* Change color when hover over Add to Cart button */
+.add-to-cart:hover{
+    background-color: #F5BC3A;
+}
